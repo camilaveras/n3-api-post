@@ -1,5 +1,5 @@
-const express = require("express")
-const router = express.Router()
+const express = require("express") //chamando o express
+const router = express.Router() // chamado o router
 
 router.get("/", function (req, res) {
   res.status(200).send({

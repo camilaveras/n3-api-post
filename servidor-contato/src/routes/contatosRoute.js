@@ -8,3 +8,5 @@ router.get("/", controller.getAll) //essa rota puxa o index
 router.post("/criar", bodyParser.json(), controller.add)
 
 module.exports = router
+
+
