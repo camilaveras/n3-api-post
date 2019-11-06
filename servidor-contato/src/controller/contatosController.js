@@ -11,6 +11,7 @@ const getAll = (request, response) => {
 //};
 
 const add = (request, response ) => {
+  console.log(request.body.nome)//manipulando o que chega na porta da requisição
  model.agenda.contatos.push(request.body)  //serve para colocar algo dentro do contatos.js
 response.status(200).send()
 }
@@ -19,4 +20,5 @@ module.exports = {
   getAll,
   //getById
   add
+  
 }
